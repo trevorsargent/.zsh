@@ -1,0 +1,3 @@
+[submodule "/Users/trev/.zsh/plugins/zsh-z"]
+	path = /Users/trev/.zsh/plugins/zsh-z
+	url = git@github.com:agkozak/zsh-z.git
