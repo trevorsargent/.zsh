@@ -1,5 +1,5 @@
 # Starship 
-export STARSHIP_CONFIG=$ZSH/configs/starship.toml
+export STARSHIP_CONFIG=$CONFIGS/starship.toml
 
 brew list starship
 if [ ! $? -eq 0 ]; then

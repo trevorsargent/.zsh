@@ -1,0 +1,1 @@
+export CONFIGS=$ZSH/configs
