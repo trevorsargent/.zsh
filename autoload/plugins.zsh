@@ -10,11 +10,9 @@ function loadPlugin {
 		echo "DOWNLOADING $DIR"
 		git submodule add $URL "$PLUGINS/$DIR"
 	else 
-		D=$CWD
 		cd $PLUGINS/$DIR
 		echo "UPDATING $DIR"
 		git pull
-		cd $D
 	fi
 
 	source "$PLUGINS/$DIR/$FILE"
