@@ -8,7 +8,7 @@ function loadPlugin {
 
 	if [ ! -d $PLUGINS/$DIR ]; then
 		echo "DOWNLOADING $DIR"
-		git submodule add $URL "$PLUGINS/$DIR"
+		git submodule add -f $URL "$PLUGINS/$DIR"
 	else 
 		D="$PWD"
 		cd $PLUGINS/$DIR
