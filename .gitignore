@@ -1,5 +1,5 @@
 .zsh_history
 
-plugins/*
+plugins
 
 .gitmodules

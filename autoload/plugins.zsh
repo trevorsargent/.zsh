@@ -8,7 +8,9 @@ function loadPlugin {
 
 	if [ ! -d $PLUGINS/$DIR ]; then
 		echo "DOWNLOADING $DIR"
+		cd $ZSH
 		git submodule add -f $URL "$PLUGINS/$DIR"
+		cd
 	else 
 		D="$PWD"
 		cd $PLUGINS/$DIR
@@ -21,4 +23,4 @@ function loadPlugin {
 }
 
 loadPlugin zsh-z git@github.com:agkozak/zsh-z.git zsh-z.plugin.zsh
-
+loadPlugin zsh-nvm git@github.com:lukechilds/zsh-nvm.git zsh-nvm.plugin.zsh
