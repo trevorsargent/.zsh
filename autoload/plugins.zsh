@@ -7,15 +7,13 @@ function loadPlugin {
 	FILE=$3
 
 	if [ ! -d $PLUGINS/$DIR ]; then
-		echo "DOWNLOADING $DIR"
 		cd $ZSH
-		git submodule add -f $URL "$PLUGINS/$DIR"
+		git submodule add -f $URL "$PLUGINS/$DIR" >> /dev/null
 		cd
 	else 
 		D="$PWD"
 		cd $PLUGINS/$DIR
-		echo "UPDATING $DIR"
-		git pull
+		git pull >> /dev/null
 		cd "$D"
 	fi
 

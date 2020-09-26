@@ -1,4 +1,4 @@
 D="$PWD"
 cd "$ZSH"
-git pull
+git pull >> /dev/null
 cd "$D"
